@@ -8,20 +8,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Josefin+Sans:wght@300;600&display=swap" rel="stylesheet">
     <!-- StyleSheet -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/styles/style.css">
+    <link rel="stylesheet" href="css/fontello/fontello.css">
 
 
-    <title>Document</title>
+    <title>Urszula Małek</title>
 </head>
 <body>
     <div class='container'>
         <div class="bg">
+
+            <nav id="nav-body">
+                <a href="javascript:void(0)" class="close-nav" onclick="closeNav()">×</a>
+                <a href="" class="nav-item">O mnie</a>
+                <a href="" class="nav-item">Oferta</a>
+                <a href="" class="nav-item">Kontakt</a>
+            </nav>
+
             <div class="text-logo">
                 <div class="big-text">Urszula Małek</div>
                 <div class="small-text">Fotografia Naturalna</div>
             </div>
-            <div class="nav">
+            <div class="nav-hamburger" onclick="openNav()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -43,11 +51,30 @@
             <div class="section-breaker-text">Instagram</div>
         </div>
         <footer>
-            <div class="logo-container"></div>
-            <div class="references"></div>
-            <div class="social-media"></div>
+            <div class="footer-upper">
+                <div class="footer-logo">
+                    <div class="big-text-footer">Urszula Małek</div>
+                    <div class="small-text-footer">Fotografia Naturalna</div>
+                </div>
+                <div class="references">
+                    <div class="ref-item">O mnie</div>
+                    <div class="ref-item">Oferta</div>
+                    <div class="ref-item ref-item-bottom">Kontakt</div>
+                </div>
+                <div class="social-media">
+                    <i class="icon-facebook"></i>
+                    <i class="icon-instagram"></i>
+                </div>
+            </div>
+            <div class="footer-lower">© Urszula Małek - fotografia naturalna</div>
         </footer>
     </div>
     
+    <!-- JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="javascript/scroll.js"></script>
+    <script type="text/javascript" src="javascript/nav.js"></script>
+
 </body>
 </html>
