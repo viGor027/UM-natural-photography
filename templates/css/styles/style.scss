@@ -10,6 +10,7 @@ $light-beige: #FAF0E6;
 }
 
 .container{
+    overflow-x: hidden;
     font-family: $josefin;
     width: 100%;
     .bg{
@@ -33,6 +34,7 @@ $light-beige: #FAF0E6;
             text-shadow: 1px 1px 2px #000;
             font-size: 30px;
             overflow-x: hidden;
+            overflow-y: hidden;
             transition: 0.5s;
             .close-nav{
                 height: 30px;
