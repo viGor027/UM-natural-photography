@@ -10,104 +10,6 @@ $light-beige: #FAF0E6;
 }
 
 .container{
-    overflow-x: hidden;
-    font-family: $josefin;
-    width: 100%;
-    .bg{
-        width: 100vw;
-        height: 100vh;
-        background-image: url(../../images/CroppedLandingImageMobile.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: $darkest-beige;
-        display: flex;
-        nav{
-            width: 100vw;
-            height: 0px; //for opened navbar height value: 200px
-            background-color: $darkest-beige;
-            position: absolute;
-            top: 0px;
-            right: 0;
-            z-index: 2;
-            display: flex;
-            justify-content: space-around;
-            text-shadow: 1px 1px 2px #000;
-            font-size: 30px;
-            overflow-x: hidden;
-            overflow-y: hidden;
-            transition: 0.5s;
-            .close-nav{
-                height: 30px;
-                width: 35px;
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-size: 1.5em;
-                margin: 24px 35px auto auto;
-                text-align: center;
-                text-decoration: none;
-                line-height: 50px;
-                color:#fff;
-            }
-            .nav-item{
-                width: 100px;
-                height: auto;
-                margin: 150px auto auto auto;
-                font-size: 0.8em;
-                // font-weight: 600;
-                text-align: center;
-                display: block;
-                text-decoration: none;
-                color: #fff;
-            }
-        }
-        .text-logo{
-            //width: auto;
-            //height: auto;
-            position: absolute;
-            font-family: $dynalight;
-            font-size: 48px;
-            color: #fff;
-            text-shadow: 1px 1px 2px #000;
-            margin: 15px 0px 0px 15px;
-            top:0;
-            left: 0;
-            z-index: 3;
-            .big-text{
-                font-size: 1em;
-            }
-            .small-text{
-                font-size: 0.5em;
-                text-align: right;
-            }
-        }
-        .nav-hamburger{
-            width: 35px;
-            height: 30px;
-            margin: 35px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 1;
-            .bar{
-                width: 35px;
-                height: 4px;
-                background-color: white;
-                box-shadow: 1px 1px 2px #000;
-                margin-bottom: 6px;
-            }
-        }
-        .icon-down-open{
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            bottom: 15px;
-            left: 47%;
-            color: #fff;
-            font-size: 24px;
-            text-shadow: 1px 1px 2px #000;
-        } 
-    }
     .section-breaker{
         height: 60px;
         width: 100%;
@@ -125,22 +27,27 @@ $light-beige: #FAF0E6;
         margin-top: 50px;
     }
     .card-container{
-        width: 400px;
-        height: auto;
-        margin: 50px auto auto auto;
+        max-width: 380px;
+        height: 600px;
+        margin: 35px auto auto auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         .photo{
             width: 286px;
             height: 430px;
-            background-image: url(../../images/CardContainerPhoto.jpg);
+            background-image: url(../../images/main/CardContainerPhoto.jpg);
             background-size: cover;
-            margin: 0px auto auto auto;
+            //margin: 0px auto auto auto;
             box-shadow: -9px -9px 0px $darkest-beige;
         }
         .card-description{
-            width: 380px;
+            min-width: 286px;
+            max-width: 380px;
             height: auto;
             background-color: $midddle-beige;
-            margin: 30px auto auto auto;
+            //margin: 30px 10px auto 10px;
             font-size: 22px;
             text-align: center;
             padding: 5px;
@@ -154,59 +61,51 @@ $light-beige: #FAF0E6;
         text-align: center;
         line-height: 44px;
         font-size: 20px;
+        transition-duration: .4s;
     }
-    footer{
-        width: 100%;
-        height: 125px;
-        background-color: $darkest-beige;
-        .footer-upper{
-            width: 90%;
-            height: 95px;
-            margin: 0px auto auto auto;
-            border-bottom: solid 1px #000;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .footer-logo{
-                width: 150px;
-                height: auto;
-                font-family: $dynalight;
+    .button:hover{
+        cursor: pointer;
+        background-color: #C8A88A;
+        
+    }
+}
+
+@media all and (min-width: 768px){
+    .container{
+        .section-breaker{
+            height: 100px;
+            .section-breaker-text{
                 font-size: 32px;
-                text-shadow: 1px 1px 50px #000;
-                margin-top: auto 0px;
-                display: inline-block;
-                .big-text-footer{
-                    font-size: 1em;
-                }
-                .small-text-footer{
-                    font-size: 0.5em;
-                    text-align: right;
-                }
+                line-height: 100px;
             }
-            .references{
-                display: inline-block;
-                .ref-item{
-                    font-size: 12px;
-                    color: #000;
-                    margin: 0px auto auto auto;
-                    padding: 9px;
-                    text-align: left;    
-                }
-                .ref-item-bottom{
-                    margin-bottom: 0px;
-                }
-            }
-            .social-media{
-                margin-right: 5px;
-                font-size: 24px;
-            }    
         }
-        .footer-lower{
-            height: auto;
-            font-size: 11px;
-            text-align: center;
-            line-height: 100%;
-            padding: 8px 0px;
+        .card-container{
+            max-width: 720px;
+            display: flex;
+            width: auto;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            .photo{
+                width: 340px;
+                height: 512px;
+                margin: auto;
+            }
+            .card-description{
+                width: 290px;
+                height: 440px;
+                //display: none;
+                font-size: 28px;
+                line-height: 36px;
+                text-align: left;
+                padding: 10px;
+            }
+        }
+        .button{
+            width: 220px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 24px;
         }
     }
 }
