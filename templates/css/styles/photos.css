@@ -1,0 +1,43 @@
+.container .main-bg {
+  background-image: url(../../images/main/LandingImageMobile.jpg);
+}
+.container .omnie-bg {
+  background-image: url(../../images/omnie/LandingImageMobile.jpg);
+}
+.container .kontakt-bg {
+  background-image: url(../../images/kontakt/LandingImageMobile.jpg);
+}
+.container .omnie-bg, .container .oferta-bg, .container .kontakt-bg {
+  background-position: center center;
+}
+.container .content-photo-omnie-top {
+  background-image: url(../../images/omnie/ContentTopPhoto.jpg);
+}
+.container .content-photo-omnie-bottom {
+  background-image: url(../../images/omnie/ContentBottomPhoto.jpg);
+}
+
+@media all and (min-width: 768px) {
+  .container .main-bg {
+    background-image: url(../../images/main/LandingImageMid.jpg);
+  }
+  .container .omnie-bg {
+    background-image: url(../../images/omnie/LandingImageMid.jpg);
+  }
+  .container .kontakt-bg {
+    background-image: url(../../images/kontakt/LandingImageMid.jpg);
+  }
+}
+@media all and (min-width: 1152px) {
+  .container .main-bg {
+    background-image: url(../../images/main/LandingImageDesktop.jpg);
+  }
+  .container .omnie-bg {
+    background-image: url(../../images/omnie/LandingImageDesktop.jpg);
+  }
+  .container .kontakt-bg {
+    background-image: url(../../images/kontakt/LandingImageDesktop.jpg);
+  }
+}
+
+/*# sourceMappingURL=photos.css.map */

@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Josefin+Sans:wght@300;600&display=swap" rel="stylesheet">
     <!-- Main StyleSheets -->
-    <link rel="stylesheet" href="css/styles/omnie.css">
     <link rel="stylesheet" href="css/styles/common.css">
+    <link rel="stylesheet" href="css/styles/content.css">
+    <link rel="stylesheet" href="css/styles/photos.css">
     <!-- Fontello StyleSheet -->
     <link rel="stylesheet" href="css/fontello/fontello.css">
 
@@ -18,18 +19,20 @@
 </head>
 <body>
     <div class="container">
-        <div class="bg">
+        <div class="bg omnie-bg">
 
             <nav id="nav-body">
                 <a href="javascript:void(0)" class="close-nav" onclick="closeNav()">×</a>
-                <a href="#" class="nav-item">O mnie</a>
-                <a href="#" class="nav-item">Oferta</a>
-                <a href="#" class="nav-item">Kontakt</a>
+                <a href="omnie.html" class="nav-item">O mnie</a>
+                <a href="oferta.html" class="nav-item">Oferta</a>
+                <a href="kontakt.html" class="nav-item">Kontakt</a>
             </nav>
 
             <div class="text-logo">
-                <div class="big-text">Urszula Małek</div>
-                <div class="small-text">Fotografia Naturalna</div>
+                <a href="index.html">
+                    <span class="big-text">Urszula Małek</span>
+                    <span class="small-text">Fotografia Naturalna</span>
+                </a>
             </div>
             <div class="nav-hamburger" onclick="openNav()">
                 <div class="bar"></div>
@@ -37,6 +40,38 @@
                 <div class="bar"></div>
             </div>
             <a href="#" id="scroll-down"><i class="icon-down-open"></i></a>
+        </div>
+        <div class="section-breaker" id="section-breaker">
+            <div class="section-breaker-text">O mnie</div>
+        </div>
+
+        <div class="content-container">
+            <div class="content-top">
+                <div class="content-photo content-photo-omnie-top"></div>
+                <div class="content-text-container">
+                    <h1>Nagłówek</h1>
+                    <span class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer ultrices dignissim malesuada.
+                        Etiam a libero ac enim facilisis commodo nec vitae libero.
+                        Ut dictum porttitor tempor. Pellentesque iaculis ante vitae.</span>
+                </div>
+            </div>
+            <div class="content-bottom content-top">
+                <div class="content-photo content-photo-omnie-bottom"></div>
+                <div class="content-text-container">
+                    <h1>Nagłówek</h1>
+                    <span class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer ultrices dignissim malesuada.
+                        Etiam a libero ac enim facilisis commodo nec vitae libero.
+                        Ut dictum porttitor tempor. Pellentesque iaculis ante vitae.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button"><a href="oferta.html">Zapoznaj się z ofertą</a></div>
+
+        <div class="section-breaker sb-instagram">
+            <div class="section-breaker-text">Instagram</div>
         </div>
 
         <footer>
@@ -46,9 +81,9 @@
                     <div class="small-text-footer">Fotografia Naturalna</div>
                 </div>
                 <div class="references">
-                    <div class="ref-item">O mnie</div>
-                    <div class="ref-item">Oferta</div>
-                    <div class="ref-item ref-item-bottom">Kontakt</div>
+                    <a class="ref-item" href="omnie.html">O mnie</a>
+                    <a class="ref-item" href="oferta.html">Oferta</a>
+                    <a class="ref-item ref-item-bottom" href="kontakt.html">Kontakt</a>
                 </div>
                 <div class="social-media">
                     <div class="social-media-ib">

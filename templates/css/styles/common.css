@@ -6,7 +6,6 @@
 .container .bg {
   width: 100vw;
   height: 100vh;
-  background-image: url(../../images/main/LandingImageMobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #D9B99B;
@@ -54,27 +53,33 @@
   display: block;
   text-decoration: none;
   color: #fff;
+  transition-duration: 0.2s;
 }
 .container .bg nav .nav-item:hover {
   cursor: pointer;
   color: #FFF0DB;
-  transition: 0.2s;
 }
 .container .bg .text-logo {
   position: absolute;
   font-family: "Dynalight", cursive;
   font-size: 48px;
-  color: #fff;
   text-shadow: 1px 1px 2px #000;
   margin: 15px 0px 0px 3vw;
   top: 0;
   left: 0;
   z-index: 3;
 }
-.container .bg .text-logo .big-text {
+.container .bg .text-logo a, .container .bg .text-logo a:link {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-decoration: none;
+  color: white;
+}
+.container .bg .text-logo a .big-text, .container .bg .text-logo a:link .big-text {
   font-size: 1em;
 }
-.container .bg .text-logo .small-text {
+.container .bg .text-logo a .small-text, .container .bg .text-logo a:link .small-text {
   font-size: 0.5em;
   text-align: right;
 }
@@ -102,10 +107,48 @@
   height: 25px;
   position: absolute;
   bottom: 15px;
-  left: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 24px;
   text-shadow: 1px 1px 2px #000;
+}
+.container .section-breaker {
+  height: 60px;
+  width: 100%;
+  background-color: #FAF0E6;
+}
+.container .section-breaker .section-breaker-text {
+  line-height: 60px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  color: #000;
+}
+.container .sb-instagram {
+  margin-top: 50px;
+}
+.container .button {
+  width: 189px;
+  height: 44px;
+  background-color: #D9B99B;
+  margin: 25px auto auto auto;
+  text-align: center;
+  line-height: 44px;
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+.container .button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+}
+.container .button:hover {
+  cursor: pointer;
+  background-color: #C8A88A;
 }
 .container footer {
   width: 100%;
@@ -141,11 +184,14 @@
   display: inline-block;
 }
 .container footer .footer-upper .references .ref-item {
+  display: block;
+  text-decoration: none;
   font-size: 12px;
   color: #000;
   margin: 0px auto auto auto;
   padding: 9px;
   text-align: left;
+  cursor: pointer;
 }
 .container footer .footer-upper .references .ref-item-bottom {
   margin-bottom: 0px;
@@ -188,11 +234,21 @@
 }
 
 @media all and (min-width: 768px) {
-  .container .bg {
-    background-image: url(../../images/main/LandingImageMid.jpg);
-  }
   .container .bg .text-logo {
     font-size: 60px;
+  }
+  .container .section-breaker {
+    height: 100px;
+  }
+  .container .section-breaker .section-breaker-text {
+    font-size: 32px;
+    line-height: 100px;
+  }
+  .container .button {
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
   }
   .container footer {
     height: 230px;
@@ -241,11 +297,6 @@
     height: 50px;
     line-height: 50px;
     font-size: 18px;
-  }
-}
-@media all and (min-width: 1152px) {
-  .container .bg {
-    background-image: url(../../images/main/LandingImageDesktop.jpg);
   }
 }
 

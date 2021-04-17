@@ -5,7 +5,6 @@ $darkest-beige: #D9B99B;
 $midddle-beige: #FFF0DB;
 $light-beige: #FAF0E6;
 
-
 .container{
     overflow-x: hidden;
     font-family: $josefin;
@@ -13,7 +12,6 @@ $light-beige: #FAF0E6;
     .bg{
         width: 100vw;
         height: 100vh;
-        background-image: url(../../images/main/LandingImageMobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-color: $darkest-beige;
@@ -60,32 +58,37 @@ $light-beige: #FAF0E6;
                 display: block;
                 text-decoration: none;
                 color: #fff;
+                transition-duration: 0.2s;
             }
             .nav-item:hover{
                 cursor: pointer;
                 color: $midddle-beige;
-                transition: 0.2s;
             }
         }
         .text-logo{
-            //width: auto;
-            //height: auto;
             position: absolute;
             font-family: $dynalight;
             font-size: 48px;
-            color: #fff;
             text-shadow: 1px 1px 2px #000;
             margin: 15px 0px 0px 3vw;
             top:0;
             left: 0;
             z-index: 3;
-            .big-text{
-                font-size: 1em;
+            a, a:link{
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                text-decoration: none;
+                color: white;
+                .big-text{
+                    font-size: 1em;
+                }
+                .small-text{
+                    font-size: 0.5em;
+                    text-align: right;
+                }
             }
-            .small-text{
-                font-size: 0.5em;
-                text-align: right;
-            }
+            
         }
         .nav-hamburger{
             width: 35px;
@@ -111,11 +114,51 @@ $light-beige: #FAF0E6;
             height: 25px;
             position: absolute;
             bottom: 15px;
-            left: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color: #fff;
             font-size: 24px;
             text-shadow: 1px 1px 2px #000;
         } 
+    }
+    .section-breaker{
+        height: 60px;
+        width: 100%;
+        background-color: $light-beige;
+        .section-breaker-text{
+            line-height: 60px;
+            text-align: center;
+            font-family: $josefin;
+            font-size: 22px;
+            font-weight: lighter;
+            color: #000;
+        }
+    }
+    .sb-instagram{
+        margin-top: 50px;
+    }
+    .button{
+        width: 189px;
+        height: 44px;
+        background-color: $darkest-beige;
+        margin: 25px auto auto auto;
+        text-align: center;
+        line-height: 44px;
+        font-size: 20px;
+        transition-duration: .4s;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: #000;
+
+        }
+    }
+    .button:hover{
+        cursor: pointer;
+        background-color: #C8A88A;
+        
     }
     footer{
         width: 100%;
@@ -148,11 +191,14 @@ $light-beige: #FAF0E6;
             .references{
                 display: inline-block;
                 .ref-item{
+                    display: block;
+                    text-decoration: none;
                     font-size: 12px;
                     color: #000;
                     margin: 0px auto auto auto;
                     padding: 9px;
-                    text-align: left;    
+                    text-align: left;
+                    cursor: pointer;  
                 }
                 .ref-item-bottom{
                     margin-bottom: 0px;
@@ -201,10 +247,22 @@ $light-beige: #FAF0E6;
 @media all and (min-width: 768px){
     .container{
         .bg{
-            background-image: url(../../images/main/LandingImageMid.jpg);
             .text-logo{
                 font-size: 60px;
             }
+        }
+        .section-breaker{
+            height: 100px;
+            .section-breaker-text{
+                font-size: 32px;
+                line-height: 100px;
+            }
+        }
+        .button{
+            width: 220px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 24px;
         }
         footer {
             height: 230px;
@@ -256,14 +314,6 @@ $light-beige: #FAF0E6;
                 line-height: 50px;
                 font-size: 18px;
             }
-        }
-    }
-}
-
-@media all and (min-width: 1152px) {
-    .container{
-        .bg{
-            background-image: url(../../images/main/LandingImageDesktop.jpg);
         }
     }
 }

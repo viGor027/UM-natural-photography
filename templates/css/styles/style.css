@@ -2,22 +2,6 @@
   margin: 0;
 }
 
-.container .section-breaker {
-  height: 60px;
-  width: 100%;
-  background-color: #FAF0E6;
-}
-.container .section-breaker .section-breaker-text {
-  line-height: 60px;
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 22px;
-  font-weight: lighter;
-  color: #000;
-}
-.container .sb-instagram {
-  margin-top: 50px;
-}
 .container .card-container {
   max-width: 380px;
   height: 600px;
@@ -43,29 +27,8 @@
   text-align: center;
   padding: 5px;
 }
-.container .button {
-  width: 189px;
-  height: 44px;
-  background-color: #D9B99B;
-  margin: 25px auto auto auto;
-  text-align: center;
-  line-height: 44px;
-  font-size: 20px;
-  transition-duration: 0.4s;
-}
-.container .button:hover {
-  cursor: pointer;
-  background-color: #C8A88A;
-}
 
 @media all and (min-width: 768px) {
-  .container .section-breaker {
-    height: 100px;
-  }
-  .container .section-breaker .section-breaker-text {
-    font-size: 32px;
-    line-height: 100px;
-  }
   .container .card-container {
     max-width: 720px;
     display: flex;
@@ -86,12 +49,6 @@
     line-height: 36px;
     text-align: left;
     padding: 10px;
-  }
-  .container .button {
-    width: 220px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
   }
 }
 

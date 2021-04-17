@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="Pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +7,24 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Josefin+Sans:wght@300;600&display=swap" rel="stylesheet">
-    <!-- Main StyleSheets -->
-    <link rel="stylesheet" href="css/styles/style.css">
-    <link rel="stylesheet" href="css/styles/common.css">
-    <link rel="stylesheet" href="css/styles/photos.css">
     <!-- Fontello StyleSheet -->
     <link rel="stylesheet" href="css/fontello/fontello.css">
-
+    <!-- Main StyleSheets -->
+    <link rel="stylesheet" href="css/styles/common.css">
+    <link rel="stylesheet" href="css/styles/content.css">
+    <link rel="stylesheet" href="css/styles/photos.css">
 
     <title>Urszula Małek</title>
 
 </head>
 <body>
-    <div class='container'>
-        <div class="bg main-bg">
+    <div class="container">
+        <div class="bg kontakt-bg">
 
             <nav id="nav-body">
                 <a href="javascript:void(0)" class="close-nav" onclick="closeNav()">×</a>
                 <a href="omnie.html" class="nav-item">O mnie</a>
-                <a href="" class="nav-item">Oferta</a>
+                <a href="oferta.html" class="nav-item">Oferta</a>
                 <a href="kontakt.html" class="nav-item">Kontakt</a>
             </nav>
 
@@ -43,19 +42,30 @@
             <a href="#" id="scroll-down"><i class="icon-down-open"></i></a>
         </div>
         <div class="section-breaker" id="section-breaker">
-            <div class="section-breaker-text">Fotografia to moja pasja</div>
+            <div class="section-breaker-text">Kontakt</div>
         </div>
-        <div class="card-container">
-            <div class="photo"></div>
-            <div class="card-description">Fotografia typu lifestyle Tarnów/Kraków/Rzeszów.
-                Z miłości do dzieci zrodziła się miłość do zdjęć.
-                Chętnie wykonam sesje domowe lub fotoreportaż z ważnego dnia w Waszym życiu :) piszcie, pytajcie!</div>
+
+        <div class="contact-form">
+            <div class="contact-form-info">
+                <div class="contact-form-info-text">Możesz znaleźć mnie na moich social mediach
+                     lub napisz wiadomość w formularzu poniżej :)</div>
+                <div class="contact-form-info-icons">
+                    <i class="icon-facebook"></i>
+                    <i class="icon-instagram"></i>
+                </div>
+            </div>
+            <form action="" class="inputs-container">
+                <input type="text" placeholder="Jak się nazywasz?" name="uname">
+                <input type="text" placeholder="Adres e-mail" name="umail">
+                <textarea rows="10" type="text" placeholder="Twoja wiadomość..." name="umessage" class="message"></textarea>
+                <input type="submit" placeholder="Wyślij" name="usubmit" class="submit-button">
+            </form>
         </div>
-        <div class="button"><a href="omnie.html"> Więcej o mnie</a></div>
-        <div class="button">Umów się na sesję</div>
+
         <div class="section-breaker sb-instagram">
             <div class="section-breaker-text">Instagram</div>
         </div>
+
         <footer>
             <div class="footer-upper">
                 <div class="footer-logo">
@@ -64,7 +74,7 @@
                 </div>
                 <div class="references">
                     <a class="ref-item" href="omnie.html">O mnie</a>
-                    <a class="ref-item">Oferta</a>
+                    <a class="ref-item" href="oferta.html">Oferta</a>
                     <a class="ref-item ref-item-bottom" href="kontakt.html">Kontakt</a>
                 </div>
                 <div class="social-media">
@@ -80,14 +90,14 @@
             </div>
             <div class="footer-lower">© Urszula Małek - fotografia naturalna</div>
         </footer>
+
     </div>
+
+        <!-- JavaScript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="javascript/scroll.js"></script>
     
-    <!-- JavaScript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="javascript/scroll.js"></script>
-
-    <script type="text/javascript" src="javascript/nav.js"></script>
-
+        <script type="text/javascript" src="javascript/nav.js"></script>
 </body>
 </html>
