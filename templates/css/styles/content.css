@@ -2,6 +2,85 @@
   margin: 0;
 }
 
+.container .offer-container {
+  width: 340px;
+  height: 2775px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF0DB;
+  margin: 50px auto auto auto;
+}
+.container .offer-container .two-cols-pack .offer-col {
+  height: 675px;
+  display: flex;
+  flex-direction: column;
+}
+.container .offer-container .two-cols-pack .offer-col .col-elem {
+  font-weight: 300;
+  font-size: 22px;
+  height: auto;
+  width: 340px;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+.container .offer-container .two-cols-pack .offer-col .first-col-elem {
+  font-weight: 600;
+  background-color: #FFF0DB;
+}
+.container .offer-container .two-cols-pack .offer-col .last-col-elem {
+  line-height: 25px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #D9B99B;
+}
+.container .offer-container .two-cols-pack .offer-col .premium-last-elem {
+  padding: 18px 0px 17px 0px;
+}
+.container .offer-container .two-cols-pack .offer-col .no-border {
+  border: none;
+}
+.container .offer-container .two-cols-pack .offer-col .offer-col-lenghten {
+  height: 750px;
+}
+.container .tiles-container {
+  margin: 0px auto auto auto;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 38px;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+.container .tiles-container .tile-pack {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .tiles-container .tile-pack .tile {
+  height: 276px;
+  width: 420px;
+  line-height: 286px;
+  text-align: center;
+  background-color: #D9B99B;
+  border: 5px solid #D9B99B;
+  transition: 0.2s ease-in-out;
+}
+.container .tiles-container .tile-pack .tile a {
+  display: block;
+  width: 420px;
+  height: 286px;
+}
+.container .tiles-container .tile-pack .tile a:visited, .container .tiles-container .tile-pack .tile a {
+  color: white;
+  text-decoration: none;
+}
+.container .tiles-container .tile-pack .tile:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
 .container .bg {
   height: 93vh;
 }
@@ -77,7 +156,7 @@
   align-items: inherit;
 }
 .container .contact-form .contact-form-info .contact-form-info-text {
-  margin: 10px 5px;
+  margin: 10px 10px;
   text-align: center;
   font-size: 20px;
 }
@@ -96,13 +175,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 250px;
+  height: 300px;
 }
 .container .contact-form .inputs-container input, .container .contact-form .inputs-container textarea {
   width: 390px;
   display: block;
   font-family: "Josefin Sans", sans-serif;
   border: 2px solid #D9B99B;
+  font-size: 16px;
 }
 .container .contact-form .inputs-container .submit-button {
   width: 395px;
@@ -119,6 +199,36 @@
 }
 
 @media all and (min-width: 768px) {
+  .container .offer-container {
+    width: 740px;
+    height: 1500px;
+    flex-direction: column;
+  }
+  .container .offer-container .two-cols-pack {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .offer-container .two-cols-pack .offer-col {
+    width: 370px;
+    height: 750px;
+  }
+  .container .offer-container .two-cols-pack .offer-col .col-elem {
+    width: 370px;
+  }
+  .container .offer-container .two-cols-pack .offer-col .first-col-elem {
+    border-bottom: solid 1px #D9B99B;
+  }
+  .container .offer-container .two-cols-pack .offer-col .last-col-elem {
+    border: none;
+  }
+  .container .tiles-container {
+    height: 700px;
+  }
+  .container .tiles-container .tile-pack {
+    width: 900px;
+    flex-direction: row;
+  }
   .container .content-container .content-top {
     height: 460px;
     width: 700px;
@@ -133,6 +243,34 @@
   }
   .container .content-container .content-bottom {
     flex-direction: row-reverse;
+  }
+  .container .contact-form .contact-form-info {
+    min-width: 390px;
+    max-width: 500px;
+    min-height: 125px;
+  }
+  .container .contact-form .inputs-container input, .container .contact-form .inputs-container textarea {
+    width: 500px;
+  }
+  .container .contact-form .inputs-container .submit-button {
+    width: 500px;
+  }
+}
+@media all and (min-width: 1152px) {
+  .container .offer-container {
+    width: 1000px;
+    height: 750px;
+    flex-direction: row;
+  }
+  .container .offer-container .two-cols-pack {
+    flex-direction: row;
+  }
+  .container .offer-container .two-cols-pack .offer-col {
+    width: 250px;
+    height: 750px;
+  }
+  .container .offer-container .two-cols-pack .offer-col .col-elem {
+    width: 250px;
   }
 }
 

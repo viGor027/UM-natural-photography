@@ -7,7 +7,7 @@
         background-image: url(../../images/omnie/LandingImageMobile.jpg);
     }
     .oferta-bg{
-
+        background-image: url(../../images/oferta/LandingImageMobile.jpg);
     }
     .kontakt-bg{
         background-image: url(../../images/kontakt/LandingImageMobile.jpg);
@@ -21,6 +21,24 @@
     .content-photo-omnie-bottom{
         background-image: url(../../images/omnie/ContentBottomPhoto.jpg);
     }
+    .tiles-container{
+        .first-tile{
+            background-image: url(../../images/oferta/FirstTile.jpg);
+        }
+        .second-tile{
+            background-image: url(../../images/oferta/SecondTile.jpg);
+        }
+        .third-tile{
+            background-image: url(../../images/oferta/ThirdTile.jpg);
+        }
+        .fourth-tile{
+            background-image: url(../../images/oferta/FourthTile.jpg);
+        }
+        .first-tile, .second-tile, .third-tile, .fourth-tile{
+            background-size: cover;
+            background-position: center center;
+        }
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -32,7 +50,7 @@
             background-image: url(../../images/omnie/LandingImageMid.jpg);
         }
         .oferta-bg{
-    
+            background-image: url(../../images/oferta/LandingImageMid.jpg);
         }
         .kontakt-bg{
             background-image: url(../../images/kontakt/LandingImageMid.jpg);
@@ -49,7 +67,7 @@
             background-image: url(../../images/omnie/LandingImageDesktop.jpg);
         }
         .oferta-bg{
-    
+            background-image: url(../../images/oferta/LandingImageDesktop.jpg);
         }
         .kontakt-bg{
             background-image: url(../../images/kontakt/LandingImageDesktop.jpg);

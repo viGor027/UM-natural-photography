@@ -74,6 +74,7 @@ $light-beige: #FAF0E6;
             top:0;
             left: 0;
             z-index: 3;
+            transition: .2s ease-in-out;
             a, a:link{
                 display: flex;
                 flex-direction: column;
@@ -89,6 +90,9 @@ $light-beige: #FAF0E6;
                 }
             }
             
+        }
+        .text-logo:hover{
+            transform: scale(1.02);
         }
         .nav-hamburger{
             width: 35px;
@@ -177,7 +181,7 @@ $light-beige: #FAF0E6;
                 height: auto;
                 font-family: $dynalight;
                 font-size: 32px;
-                text-shadow: 1px 1px 50px #000;
+                
                 margin-top: auto 0px;
                 display: inline-block;
                 .big-text-footer{

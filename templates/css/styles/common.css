@@ -68,6 +68,7 @@
   top: 0;
   left: 0;
   z-index: 3;
+  transition: 0.2s ease-in-out;
 }
 .container .bg .text-logo a, .container .bg .text-logo a:link {
   display: flex;
@@ -82,6 +83,9 @@
 .container .bg .text-logo a .small-text, .container .bg .text-logo a:link .small-text {
   font-size: 0.5em;
   text-align: right;
+}
+.container .bg .text-logo:hover {
+  transform: scale(1.02);
 }
 .container .bg .nav-hamburger {
   width: 35px;
@@ -169,7 +173,6 @@
   height: auto;
   font-family: "Dynalight", cursive;
   font-size: 32px;
-  text-shadow: 1px 1px 50px #000;
   margin-top: auto 0px;
   display: inline-block;
 }
