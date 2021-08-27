@@ -181,8 +181,12 @@ $light-beige: #FAF0E6;
             align-items: center;
             width: 100px;
             font-size: 24px;
-            .icon-instagram::before, .icon-facebook::before{
-                margin: 0;
+            a:visited, a{
+                color: black;
+                text-decoration: none;
+                .icon-instagram::before, .icon-facebook::before{
+                    margin: 0;
+                }
             }
         }
         .inputs-container{
@@ -245,10 +249,20 @@ $light-beige: #FAF0E6;
 
         }
         .tiles-container{
-            height: 700px;
+            height: 520px;
             .tile-pack{
-                width: 900px;
+                width: 742px;
                 flex-direction: row;
+                .tile{
+                    font-size: 32px;
+                    line-height: 220px;
+                    width: 335px;
+                    height: 220px;
+                    a{
+                        width: 335px;
+                        height: 220px;
+                    }
+                }
             }
         }
         .content-container{
@@ -280,6 +294,28 @@ $light-beige: #FAF0E6;
                 }
                 .submit-button{
                     width: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 900px){
+    .container{
+        .tiles-container{
+            height: 630px;
+            .tile-pack{
+                width: 900px;
+                flex-direction: row;
+                .tile{
+                    line-height: 276px;
+                    font-size: 38px;
+                    width: 420px;
+                    height: 276px;
+                    a{
+                        width: 420px;
+                        height: 276px;
+                    }
                 }
             }
         }

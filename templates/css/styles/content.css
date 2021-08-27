@@ -167,7 +167,11 @@
   width: 100px;
   font-size: 24px;
 }
-.container .contact-form .contact-form-info-icons .icon-instagram::before, .container .contact-form .contact-form-info-icons .icon-facebook::before {
+.container .contact-form .contact-form-info-icons a:visited, .container .contact-form .contact-form-info-icons a {
+  color: black;
+  text-decoration: none;
+}
+.container .contact-form .contact-form-info-icons a:visited .icon-instagram::before, .container .contact-form .contact-form-info-icons a:visited .icon-facebook::before, .container .contact-form .contact-form-info-icons a .icon-instagram::before, .container .contact-form .contact-form-info-icons a .icon-facebook::before {
   margin: 0;
 }
 .container .contact-form .inputs-container {
@@ -223,11 +227,21 @@
     border: none;
   }
   .container .tiles-container {
-    height: 700px;
+    height: 520px;
   }
   .container .tiles-container .tile-pack {
-    width: 900px;
+    width: 742px;
     flex-direction: row;
+  }
+  .container .tiles-container .tile-pack .tile {
+    font-size: 32px;
+    line-height: 220px;
+    width: 335px;
+    height: 220px;
+  }
+  .container .tiles-container .tile-pack .tile a {
+    width: 335px;
+    height: 220px;
   }
   .container .content-container .content-top {
     height: 460px;
@@ -254,6 +268,25 @@
   }
   .container .contact-form .inputs-container .submit-button {
     width: 500px;
+  }
+}
+@media all and (min-width: 900px) {
+  .container .tiles-container {
+    height: 630px;
+  }
+  .container .tiles-container .tile-pack {
+    width: 900px;
+    flex-direction: row;
+  }
+  .container .tiles-container .tile-pack .tile {
+    line-height: 276px;
+    font-size: 38px;
+    width: 420px;
+    height: 276px;
+  }
+  .container .tiles-container .tile-pack .tile a {
+    width: 420px;
+    height: 276px;
   }
 }
 @media all and (min-width: 1152px) {
