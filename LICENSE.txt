@@ -1,3 +1,10 @@
-Urszula Małek Fotografia Naturalna
+Urszula Małek Fotografia Naturalna.
+
+Code: All of the present code is on MIT license.
+
+Images: The repository images belong to Urszula Małek and are cypyrighted.
+        the author agreed to use the photos for the purposes of this repository.
+        Downloading, copying and distributing photos for other purposes without consulting the author is prohibited.
+        
 
 All right reserved Copyright (C) by viGor027
